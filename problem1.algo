@@ -1,0 +1,21 @@
+ALGORITHM sumDistinctElements(set1, set2)
+VAR
+    // Initialize an empty array to hold distinct elements
+    distinctElements = []
+    // Initialize the sum to 0
+    sum = 0
+    // Loop through each element in set1
+BEGIN
+    for i in range(len(set1)):
+        // If the element is not already in the distinctElements array, add it
+        if set1[i] not in distinctElements:
+            distinctElements.append(set1[i])
+            sum += set1[i]
+    // Loop through each element in set2
+    for i in range(len(set2)):
+        // If the element is not already in the distinctElements array, add it
+        if set2[i] not in distinctElements:
+            distinctElements.append(set2[i])
+            sum += set2[i]
+    // Return the sum
+END
